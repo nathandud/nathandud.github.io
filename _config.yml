@@ -1,6 +1,6 @@
 # Setup
 title:               Dudley Dev Diaries
-tagline:             'Musings of a mobile dev'
+tagline:             'musings of a mobile dev'
 description:         'A blog for iOS development and other fun tech'
 url:                 https://nathandud.github.io
 baseurl:             ''
@@ -18,5 +18,5 @@ plugins:
   - jekyll-paginate
 
 # Custom vars
-version:             1.1.0
+version:             0.1.0
 google_analytics_id: #UA-XXXX-Y
