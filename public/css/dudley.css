@@ -96,3 +96,23 @@
 .wrapper .email:hover .tooltip:before {
 	background: #b6a5a4;
 }
+
+.copy-button {
+    font-family: "PT Sans", Georgia, "Times New Roman", serif;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    padding: 5px 10px;
+    margin: 10px 0 0px 0px; /* Top, Right, Bottom, Left */
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* float: right; */
+}
+
+.copy-button:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+    color: #000;
+}

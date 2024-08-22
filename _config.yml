@@ -1,7 +1,7 @@
 # Setup
 title:               Dudley Dev Diaries
-tagline:             'musings of a mobile dev'
-description:         'A blog for iOS development and other fun tech'
+tagline:             'musings of a mobile developer'
+description:         'A human-written blog for iOS development and other fun tech'
 url:                 https://nathandud.github.io
 baseurl:             ''
 paginate:            5
