@@ -19,7 +19,7 @@ almost every programming language[^languages] and database management system[^db
 [^history]:  [A brief history of the UUID](https://segment.com/blog/a-brief-history-of-the-uuid/) from [Twilio Segment](https://segment.com).
 [^languages]: See docs for [Python](https://docs.python.org/3/library/uuid.html), [Swift](https://developer.apple.com/documentation/foundation/uuid), [C#](https://learn.microsoft.com/en-us/dotnet/api/system.guid.newguid?view=net-8.0), and [Java](https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html)
 [^dbms]: See docs for [Oracle](https://docs.oracle.com/en/database/other-databases/nosql-database/21.1/sqlreferencefornosql/using-uuid-data-type.html), [MySQL](https://dev.mysql.com/doc/refman/5.7/en/miscellaneous-functions.html#function_uuid), [SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/data-types/uniqueidentifier-transact-sql?view=sql-server-ver16), and [PostgreSQL](https://www.postgresql.org/docs/current/datatype-uuid.html)
-
+f
 This is incredibly useful as a programmer! Imagine a social media mobile app generating millions of posts everyday. Each post can receive a `UUID` without needing to coordinate with a central server. Developers can allow users to create posts offline and be reasonably assured that no other post will have the same `ID`[^ids].
 
 [^ids]: While the probability of a collision is negligible, it is not zero. See this explanation on [Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier#Collisions).
@@ -63,7 +63,7 @@ Every `UUID` in hex is made of 32 characters (ignoring dashes), each representin
 [^hex]: Hexadecimal values can represent any number between 0-15 with a single character (0-9, A-F). Learn more with this [digital guide](https://www.ionos.co.uk/digitalguide/server/know-how/hexadecimal-system/) by [Ionos](https://www.ionos.co.uk).
 
 ### Version 1
-[Version 1](https://www.rfc-editor.org/rfc/rfc9562#name-uuid-version-1) is the most complex of the three. Here is the makeup:
+[Version 1](https://www.rfc-editor.org/rfc/rfc4122#section-4.1.1) is the most complex of the three. Here is the makeup:
 
 |Bits| Values |
 |---|---|
@@ -199,7 +199,7 @@ more expressive [^expressivedate].
 let timestamp = Int(Date.now.timeIntervalSince1970 * 1000)
 {% endhighlight %}
 
-I'm all for using inferred types when the type is clear from the intializer. In the case of a 16-member tuple, I would rather 
+I'm all for using inferred types when the type is clear from the initializer. In the case of a 16-member tuple, I would rather 
 see an explicit type declaration. Thankfully iOS 17 has a [type alias](https://developer.apple.com/documentation/foundation/uuid_t) 
 for it: `uuid_t`. I will also rename `value` to `uuidBytes` to remind me that each element is a byte.
 
